@@ -1,0 +1,5 @@
+# bundle patch for @local/dsh-skill-picker: inserts the plugin row into the web
+# profile roster. Disable with the profile patch layer (id: skill-picker).
+- insert:
+    - id: skill-picker
+      name: '@local/dsh-skill-picker'
