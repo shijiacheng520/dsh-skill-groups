@@ -1,5 +1,5 @@
 {
-  "name": "dsh-skill-picker",
+  "name": "dsh-skill-groups",
   "version": "1.0.0",
   "description": "Grouped skill picker panel for DSH Desktop composer: categorized, searchable, Chinese-annotated, auto-classifying skills from all skill roots.",
   "type": "module",

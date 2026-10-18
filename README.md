@@ -1,4 +1,4 @@
-# dsh-skill-picker
+# dsh-skill-groups
 
 > DSH Desktop 输入框技能选择器 —— 把散落各处的技能整理成带图标的中文分组面板，一键插入。
 
@@ -17,20 +17,20 @@ DSH Desktop 插件目录布局（`web` profile）：
 
 ```
 <DSH profile>/                    # %APPDATA%\dsh-desktop\harness\profiles\web
-├── package.json                  # dependencies 加 "@local/dsh-skill-picker"
+├── package.json                  # dependencies 加 "@local/dsh-skill-groups"
 ├── .local-plugins/
-│   └── dsh-skill-picker/         # 本仓库内容
+│   └── dsh-skill-groups/         # 本仓库内容
 └── node_modules/
     └── @local/
-        └── dsh-skill-picker -> ../../.local-plugins/dsh-skill-picker
+        └── dsh-skill-groups -> ../../.local-plugins/dsh-skill-groups
 ```
 
 `package.json` 里补两处：
 
 ```json
 {
-  "dependencies": { "@local/dsh-skill-picker": "file:./.local-plugins/dsh-skill-picker" },
-  "dsh": { "profile": { "bundles": ["@local/dsh-skill-picker"] } }
+  "dependencies": { "@local/dsh-skill-groups": "file:./.local-plugins/dsh-skill-groups" },
+  "dsh": { "profile": { "bundles": ["@local/dsh-skill-groups"] } }
 }
 ```
 
@@ -66,7 +66,7 @@ client (lib/client.js)                 host (lib/index.js)
 
 ## 卸载
 
-删 `node_modules/@local/dsh-skill-picker` 链接、`.local-plugins/dsh-skill-picker` 目录，并移除 `package.json` 中两处条目，重启即可。
+删 `node_modules/@local/dsh-skill-groups` 链接、`.local-plugins/dsh-skill-groups` 目录，并移除 `package.json` 中两处条目，重启即可。
 
 ## License
 
