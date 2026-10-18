@@ -1,5 +1,5 @@
 # bundle patch for dsh-skill-groups: inserts the plugin row into the web
-# profile roster. Disable with the profile patch layer (id: skill-groups-v2).
+# profile roster. Disable with the profile patch layer (id: skill-groups).
 - insert:
-    - id: skill-groups-v2
+    - id: skill-groups
       name: dsh-skill-groups
